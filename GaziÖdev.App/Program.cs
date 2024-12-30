@@ -34,14 +34,14 @@ namespace GaziÖdev.App
 
                 double vizenotu = Gecerlisayi($"{i + 1}. öğrencinin vize notunu giriniz.");
 
-                while (vizenotu < 0 || vizenotu > 100)
+                while (vizenotu <= 0 && vizenotu >= 100)
                 {
                     vizenotu = Gecerlisayi("Lütfen geçerli bir not değeri giriniz.");
                 }
 
 
                 double finalnotu = Gecerlisayi($"{i + 1}. öğrencinin final notunu giriniz.");
-                while (finalnotu < 0 || finalnotu > 100)
+                while (finalnotu <= 0 && finalnotu >= 100)
                 {
                     finalnotu = Gecerlisayi("Lütfen geçerli bir not değeri giriniz.");
                 }
